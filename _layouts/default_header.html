@@ -1,0 +1,19 @@
+{% include header.html %}
+{% if page.img %}
+	<header style="padding: 128px 0 0; background-color: {{ page.color }};">
+		<h1 style="color:{{ page.typecolor }};">{{ page.title }}</h1>
+		<h3 style="color:{{ page.typecolor }};">{{ page.subtitle }}</h3>
+		<img src="{{ page.img }}" />
+	</header>
+{% else %}
+	<header style="padding: 0; background-color: {{ page.color }};">
+		<h1 style="color:{{ page.typecolor }};">{{ page.title }}</h1>
+		<h3 style="color:{{ page.typecolor }};">{{ page.subtitle }}</h3>
+		<video style="margin: 0;" autoplay loop src="{{ page.video }}"></video>
+	</header>
+{% endif %}
+	<div class="container">
+		{{ content }}
+	</div>
+
+{% include footer.html %}

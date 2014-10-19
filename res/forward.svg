@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 17.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+<symbol  id="ic_x5F_chevronRight" viewBox="0 -24 24 24">
+	<g>
+		<polygon points="10,-6 8.6,-7.4 13.2,-12 8.6,-16.6 10,-18 16,-12 		"/>
+		<polygon fill="none" points="0,0 0,-24 24,-24 24,0 		"/>
+	</g>
+</symbol>
+<use xlink:href="#ic_x5F_chevronRight"  width="24" height="24" id="XMLID_47_" y="-24" transform="matrix(1.9971 0 0 -1.9971 0 0)" overflow="visible"/>
+</svg>

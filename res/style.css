@@ -1,0 +1,512 @@
+/*
+Name: emo
+Version: 1.1
+*/
+
+/* @import url('https://reset5.googlecode.com/hg/reset.min.css'); */
+@import url('./reset.css');
+@import url('./type.css');
+@import url('./bootstrap.css');
+
+html {
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	background-color: #000;
+	height: 100%;
+}
+
+#topnav {
+	z-index: 400;
+	color: white;
+}
+
+header {
+    margin: 0px;
+    text-align: center;
+    padding: 128px 6%;
+    height: 100%;
+}
+
+header img {
+	padding: 0;
+}
+
+header.img {
+	color: black !important;
+    background: none;
+}
+
+header.img h1 {
+		color: black;
+    background: none;
+	  padding: 128px 6% 0 6%;
+}
+
+header h1, header h3 {
+	padding-top: 0;
+	color: white;
+	text-align: center;
+	width: 100%;
+}
+
+#hamburger {
+	position: fixed;
+	top: 0;
+	background: url('./hamburger.svg');
+	width: 48px;
+	height: 48px;
+	z-index: 100;
+}
+
+footer {
+    padding: 120px;
+    background-color: #ccc;
+}
+
+:target {
+	background: #f5f5f5;
+	box-shadow: 0px 16px 48px #ccc;
+	padding: 48px;
+	border: 3px solid yellow;
+}
+
+.shadow {
+	box-shadow: 0px 4px 16px #eee;
+}
+
+#wrapper {
+    height: 100%;
+
+}
+
+hr {
+	margin: 1% 0 2% 0;
+}
+
+.hero {
+	opacity: .8;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+    z-index: 0;
+    background-size: 100% 100%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+}
+
+.download {
+	border-radius: 500px;
+	padding: 14px 64px 10px 64px;
+	display: inline-block;
+	text-transform: uppercase;
+	margin: 8px 4px;
+	border: 2px transparent solid;
+}
+
+.primary {
+	background: blue;
+	color: white !important;	
+}
+
+.download:hover {
+	background: black;
+	color: white !important;
+	border: 2px black solid;
+}
+
+.secondary {
+	background: transparent;
+	border: 2px white solid;
+	color: white !important;
+	padding: 14px 48px 10px 48px;
+}
+
+.strike::before {
+	content:"";
+	background: url('./strike.svg') no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	margin-left: -14px;
+}
+
+.gap {
+    padding-left: 200px;
+}
+
+.container {
+}
+.section {
+	padding-bottom: 6%;
+}
+
+.herotext {
+    padding: 72px 0;
+	text-align: center;
+}
+
+img, video {
+	width: 100%;
+	margin: 1% 0 1.6em 0; 
+}
+
+.gallery {
+	width: auto;
+	max-width: 96px;
+	display: inline-block;
+	margin: 0 auto;
+}
+
+/* Nav */
+#nav {
+  position: fixed;
+  width: 200px;
+  height: auto;
+  padding: 24px;
+  background: white;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, .1);
+  border-radius: 2px;
+  line-height: 1.8em;
+  text-transform: uppercase;
+  z-index: 100;
+  margin-left: -200px;
+  transition: all .2s cubic-bezier(.4, 0, 0, 1);
+}target
+
+.animate {
+	margin-left: 0px !important;
+}
+
+.nav .group {
+	padding: 8px 0;
+}
+
+.nav .group ul {
+  list-style: none;
+  padding-left: 12px;
+}
+
+.nav {
+  list-style: none;
+}
+.nav:before,
+.nav:after {
+  content: " ";
+  /* 1 */
+
+  display: table;
+  /* 2 */
+
+}
+.nav:after {
+  clear: both;
+}
+.nav > li {
+  position: relative;
+  display: block;
+}
+.nav > li > a {
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+}
+.nav > li > a:hover,
+.nav > li > a:focus {
+  text-decoration: none;
+  background-color: #eeeeee;
+}
+.nav > li.disabled > a {
+  color: #999999;
+}
+.nav > li.disabled > a:hover,
+.nav > li.disabled > a:focus {
+  color: #999999;
+  text-decoration: none;
+  background-color: transparent;
+  cursor: not-allowed;
+}
+.nav .open > a,
+.nav .open > a:hover,
+.nav .open > a:focus {
+  background-color: #eeeeee;
+  border-color: #428bca;
+}
+.nav .nav-divider {
+  height: 1px;
+  margin: 9px 0;
+  overflow: hidden;
+  background-color: #e5e5e5;
+}
+.nav > li > a > img {
+  max-width: none;
+}
+
+/* Lists for taxonomies */
+.taxonomy p {
+	padding: 0 0 32px;
+}
+
+dl {
+  counter-reset: taxonomy-counter;
+}
+
+dl dt:before {
+  content: counter(taxonomy-counter, decimal-leading-zero);
+  counter-increment: taxonomy-counter;
+  font-size: 14px;
+  padding-right: 8px;
+}
+
+dt {
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+dt p {
+  font-size: 16px;
+  margin-left: 24px;
+  text-transform: none;	
+  font-family: 'Roboto', sans-serif;
+}
+
+dd {
+	clear: right;
+}
+
+li h4, li img {
+  padding: 0;
+  float: none !important;
+}
+
+.centerout {
+	display: table;
+	height: 100%;
+	width: 100%;
+	z-index: 100;	
+
+}
+
+.centerin {
+	display: table-cell;
+	vertical-align: middle;
+	z-index: 100;	
+}
+
+.onbottom {
+	margin-left: 48px;
+	margin-top: -200px;
+	z-index: 100;
+}
+
+.admark {
+	width: 128px;
+	padding: 0;
+}
+
+#keyboard {
+	position: absolute;
+	opacity: .0;
+	transition: opacity .5s;
+}
+
+#keyboard:hover {
+	opacity: 1;
+}
+
+.video-container {
+	position: relative;
+	width: 100%;
+}
+
+
+/* Carousel */
+
+.carousel {
+  position: relative;
+}
+.carousel-inner {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+.carousel-inner > .item {
+  display: none;
+  position: relative;
+  -webkit-transition: 0.8s cubic-bezier(.4,0,.2,1) left;
+  transition: 0.8s cubic-bezier(.4,0,.2,1) left;
+}
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  line-height: 1;
+}
+.carousel-inner > .active,
+.carousel-inner > .next,
+.carousel-inner > .prev {
+  display: block;
+}
+.carousel-inner > .active {
+  left: 0;
+}
+.carousel-inner > .next,
+.carousel-inner > .prev {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.carousel-inner > .next {
+  left: 100%;
+}
+.carousel-inner > .prev {
+  left: -100%;
+}
+.carousel-inner > .next.left,
+.carousel-inner > .prev.right {
+  left: 0;
+}
+.carousel-inner > .active.left {
+  left: -100%;
+}
+.carousel-inner > .active.right {
+  left: 100%;
+}
+.carousel-control {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 12%;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+  transition: opacity .2s cubic-bezier(.4, 0, 0, 1);
+
+}
+.carousel-control.left {
+	background: url('back.svg') no-repeat center;
+	background-size: 48px 48px;
+	opacity: 0;
+}
+.carousel-control.right {
+  left: auto;
+  right: 0;
+	background: url('forward.svg') no-repeat center;
+	background-size: 48px 48px;
+	opacity: 0;
+}
+
+a.carousel-control {
+	border: none;
+}
+
+.carousel-control:hover,
+.carousel-control:focus {
+  outline: none;
+  color: #ffffff;
+  text-decoration: none;
+  opacity: 0.9;
+  filter: alpha(opacity=90);
+}
+.carousel-control .icon-prev,
+.carousel-control .icon-next,
+.carousel-control .glyphicon-chevron-left,
+.carousel-control .glyphicon-chevron-right {
+  position: absolute;
+  top: 50%;
+  z-index: 5;
+  display: inline-block;
+}
+.carousel-control .icon-prev,
+.carousel-control .glyphicon-chevron-left {
+  left: 50%;
+}
+.carousel-control .icon-next,
+.carousel-control .glyphicon-chevron-right {
+  right: 50%;
+}
+.carousel-control .icon-prev,
+.carousel-control .icon-next {
+  width: 20px;
+  height: 20px;
+  margin-top: -10px;
+  margin-left: -10px;
+  font-family: serif;
+}
+.carousel-control .icon-prev:before {
+  content: '\2039';
+}
+.carousel-control .icon-next:before {
+  content: '\203a';
+}
+.carousel-indicators {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  z-index: 15;
+  width: 60%;
+  margin-left: -30%;
+  padding-left: 0;
+  list-style: none;
+  text-align: center;
+}
+.carousel-indicators li {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 1px;
+  text-indent: -999px;
+  border: 2px solid #000;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.carousel-indicators .active {
+  margin: 0;
+  width: 12px;
+  height: 12px;
+  background-color: #000;
+}
+.carousel-caption {
+  position: absolute;
+  left: 15%;
+  right: 15%;
+  bottom: 20px;
+  z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #ffffff;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+}
+.carousel-caption .btn {
+  text-shadow: none;
+}
+@media screen and (min-width: 768px) {
+  .carousel-control .glyphicon-chevron-left,
+  .carousel-control .glyphicon-chevron-right,
+  .carousel-control .icon-prev,
+  .carousel-control .icon-next {
+    width: 30px;
+    height: 30px;
+    margin-top: -15px;
+    margin-left: -15px;
+    font-size: 30px;
+  }
+  .carousel-caption {
+    left: 20%;
+    right: 20%;
+    padding-bottom: 30px;
+  }
+  .carousel-indicators {
+    bottom: 20px;
+  }
+}
