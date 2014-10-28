@@ -1,0 +1,28 @@
+body {
+  background-image: url(./bump_bg_dimmed.jpg);
+  background-size: cover;
+  background-position: 80% 0%;
+}
+
+#mobile-wrapper.mobile {
+  position: absolute; 
+  bottom: 0px;
+}
+
+#text.mobile {
+  position: static;
+  margin-left: 6%;
+  margin-bottom: 0;
+  text-shadow: 0 1px 5px #636363;
+}
+  #text.mobile h1 {
+  }
+
+#menu.mobile {
+  position: static;
+  margin-left: 2%;
+  margin-bottom: 4%;
+  margin-right: 4%;
+  text-align: left;
+  text-shadow: 0 1px 5px #636363;
+}
