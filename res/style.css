@@ -32,22 +32,43 @@ header {
     z-index: 100;
 }
 
+
 #text {
-	left: 4%;
-	position: absolute;
-	bottom: 4%;
+	margin-top: 4%;
+}
+
+.subtitle {
+	color: white;
+	float: left;
 }
 
 #menu {
-	position: absolute;
-	bottom: 4%;
-	right: 4%;
 	color: white !important;
 	text-align: right;
+	float: right;
 }
 
 #menu li {
-	float: right;
+	float: left;
+}
+
+@media (max-width: 600px) {
+	#text {
+		margin-top: 50%;
+		text-align: center !important;
+	}
+	.subtitle {
+		float: none !important;
+		clear: both;
+	}
+	#menu {
+		float: none !important;
+		margin: 0 auto;
+		display: inline-block;
+	}
+	.like {
+		margin: 16px !important;
+	}
 }
 
 header img {
@@ -68,7 +89,6 @@ header.img h1 {
 header h1, header h3 {
 	padding-top: 0;
 	color: white;
-	text-align: left;
 	width: 100%;
 }
 
@@ -99,7 +119,7 @@ footer {
 
 #wrapper {
     height: 100%;
-
+	margin: 0 4% 0 4%;
 }
 
 hr {
@@ -131,13 +151,13 @@ hr {
 }
 
 .primary {
-	background: blue;
+	background: #33b5e5;
 	color: white !important;
 	text-decoration: none !important;
 }
 
 .download:hover {
-	color: blue !important;
+	color: #33b5e5 !important;
 }
 
 .secondary {
