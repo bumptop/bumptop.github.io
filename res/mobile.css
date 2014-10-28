@@ -13,7 +13,6 @@ body {
   position: static;
   margin-left: 6%;
   margin-bottom: 0;
-  text-shadow: 0 1px 5px #636363;
 }
   #text.mobile h1 {
   }
@@ -24,5 +23,4 @@ body {
   margin-bottom: 4%;
   margin-right: 4%;
   text-align: left;
-  text-shadow: 0 1px 5px #636363;
 }
