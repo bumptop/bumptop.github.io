@@ -31,6 +31,6 @@ body {
 
 .fb-container {
   position: absolute;
-  left: 6%;
+  padding-left: 6%;
   bottom: 4%;
 }
