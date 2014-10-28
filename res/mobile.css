@@ -6,7 +6,7 @@ body {
 
 #mobile-wrapper.mobile {
   position: absolute; 
-  bottom: 0px;
+  bottom: 4%;
 }
 
 #text.mobile {
@@ -27,4 +27,10 @@ body {
 
 .download {
   padding: 14px 8px 12px;
+}
+
+.fb-container {
+  position: absolute;
+  bottom: 4%;
+  left: 4%;
 }
