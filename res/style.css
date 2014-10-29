@@ -54,8 +54,8 @@ header {
 
 @media (max-width: 640px) {
 	#text {
-		margin-top: 50%;
 		text-align: center !important;
+		top: 25%;
 	}
 	.subtitle {
 		float: none !important;
@@ -68,6 +68,18 @@ header {
 	}
 	.like {
 		margin: 16px !important;
+	}
+	body {
+		background-image: url(./bump_bg_dimmed.jpg);
+		background-position: center;
+		background-size: cover;
+		background-repeat: none;
+	}
+	#bump {
+		display: none;
+	}
+	.download {
+		padding: 32px 0px !important;
 	}
 }
 
