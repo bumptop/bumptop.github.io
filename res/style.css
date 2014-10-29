@@ -26,15 +26,15 @@ body {
 }
 
 header {
-    text-align: left;
-    padding: 0;
     height: 100%;
     z-index: 100;
+    position: relative;
 }
 
-
 #text {
-	margin-top: 4%;
+	position: absolute;
+	bottom: 4%;
+	width: 100%;
 }
 
 .subtitle {
@@ -52,7 +52,7 @@ header {
 	float: left;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 640px) {
 	#text {
 		margin-top: 50%;
 		text-align: center !important;
@@ -143,7 +143,7 @@ hr {
 
 .download {
 	color: white !important;
-	padding: 14px 16px 12px;
+	padding: 32px 12px 32px 12px;
 	display: inline-block;
 	text-transform: uppercase;
 	margin: 8px 4px;
