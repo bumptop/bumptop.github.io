@@ -55,7 +55,7 @@ header {
 @media (max-width: 640px) {
 	#text {
 		text-align: center !important;
-		top: 25%;
+		top: 16%;
 	}
 	.subtitle {
 		float: none !important;
