@@ -37,7 +37,20 @@
 				<ul id="menu">
 					<li><a class="download" href="https://github.com/bumptop/BumpTop/wiki">About</a></li>
 					<li><a class="download" href="https://github.com/bumptop/BumpTop">Source Code</a></li>
-					<li><a class="download" href="https://github.com/bumptop/BumpTop/releases/tag/2.5">Download</a></li>
+					<script>
+					var dlLink="https://github.com/bumptop/BumpTop/releases/tag/2.5";
+					if( ! /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) 
+						{
+							if (navigator.appVersion.indexOf("Win")!=-1) 
+								dlLink="https://github.com/bumptop/BumpTop/releases/download/2.5/BumpTopWindows-v2.5.exe";
+							else if (navigator.appVersion.indexOf("Mac")!=-1) 
+								dlLink="https://github.com/bumptop/BumpTop/releases/download/2.5/BumpTopMac-1.05.2.dmg";
+//							else document.write('Other OS');					
+						}	
+//					else document.write('Other OS');					
+					document.write('<li><a class="download" href="' + dlLink + '">Download</a></li>');
+					</script>
+					
 
 				</ul>
 			</div>
